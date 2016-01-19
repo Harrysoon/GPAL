@@ -8,8 +8,8 @@ class CarShops {
 	class civ_car {
 		side = "civ";
 		vehicles[] = {
-			{ "B_Quadbike_01_F", 5000, "" }, 
-			{ "C_Hatchback_01_F", 12500, "driver" }, 
+			{ "B_Quadbike_01_F", 5000, "" },
+			{ "C_Hatchback_01_F", 12500, "driver" },
 			{ "C_Offroad_01_F", 20000, "driver" },
 			{ "C_SUV_01_F", 37500, "driver" },
 			{ "C_Hatchback_01_sport_F", 450000, "driver" },
@@ -379,11 +379,11 @@ class CfgVehicles {
 	                "#(ai,64,64,1)Fresnel(0.3,3)"
             } },
 			{ "Police", "cop", {
-	                "#(ai,64,64,1)Fresnel(1.3,7)"
+	                "textures\police\vehicles\offroad.paa"
             } },
-            { "Taxi", "civ", {
+            /*{ "Taxi", "civ", {
 	                "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
-            } }
+            } }*/
 	    };
     };
 
@@ -426,7 +426,7 @@ class CfgVehicles {
 	                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             } },
             { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
+                "textures\police\vehicles\hatchback.paa"
             } }
         };
     };
@@ -554,7 +554,7 @@ class CfgVehicles {
 	                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             } },
             { "Cop", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
+                "textures\police\vehicles\suv.paa"
             } }
 	        };
     };
@@ -598,9 +598,10 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = {
         	{ "Regular", "cop", {
-                "\A3\Soft_F\MRAP_01\Data\mrap_01_base_co.paa"
+                "textures\police\vehicles\hunterfront.paa",
+								"textures\police\vehicles\hunterback.paa"
             } },
-            { "Black", "fed", {
+            { "Black", "cop", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
             } }
         };
@@ -614,7 +615,7 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = {
         	{ "Sheriff", "cop", {
-                "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
+                "textures\police\vehicles\npashummingbird.paa"
             } },
 			{ "Black", "fed", {
 	                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
@@ -672,13 +673,13 @@ class CfgVehicles {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa"
             } },
 			{ "White / Blue", "civ", {
-	                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa"   
+	                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa"
             } },
-			{ "Digi Green", "donate", {
+			{ "Digi Green", "reb", {
 	                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa"
             } },
 			{ "Desert Digi", "reb", {
-	                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa" 
+	                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             } },
             { "EMS White", "med", {
                 "#(argb,8,8,3)color(1,1,1,0.8)"
