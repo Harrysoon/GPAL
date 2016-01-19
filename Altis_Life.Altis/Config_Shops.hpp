@@ -136,7 +136,8 @@ class WeaponShops {
 			{ "muzzle_snds_H", "", 2750 },
 			{ "30Rnd_65x39_caseless_mag", "", 100 },
 			{ "30Rnd_9x21_Mag", "", 60 },
-			{ "9Rnd_45ACP_Mag", "", 200 }
+			{ "9Rnd_45ACP_Mag", "", 200 },
+      { "V_TacVest_blk_POLICE", "", 300}
         };
     };
     //Medic Shops
