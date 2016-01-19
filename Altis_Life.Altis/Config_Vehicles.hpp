@@ -29,18 +29,15 @@ class CarShops {
 	class med_shop {
 		side = "med";
 		vehicles[] = {
-			{ "C_Offroad_01_F", 10000, "" },
-			{ "I_Truck_02_medical_F", 25000, "" },
-			{ "O_Truck_03_medical_F", 45000, "" },
-			{ "B_Truck_01_medical_F", 60000, "" }
+			{ "C_Van_01_box_F", 5000, "" },
+			{ "C_SUV_01_F", 15000, "" }
 		};
 	};
 
 	class med_air_hs {
 		side = "med";
 		vehicles[] = {
-			{ "B_Heli_Light_01_F", 50000, "mAir" },
-			{ "O_Heli_Light_02_unarmed_F", 75000, "mAir" }
+			{ "O_Heli_Light_02_unarmed_F", 35000, "mAir" }
 		};
 	};
 
@@ -77,7 +74,8 @@ class CarShops {
 			{ "B_MRAP_01_F", 30000, "", { "life_coplevel", 3 } },
 			{ "I_Truck_02_covered_F", 40000, ""},
 			{ "C_Van_01_box_F", 25000, ""},
-			{ "C_Hatchback_01_sport_F", 15000, ""}
+			{ "C_Hatchback_01_sport_F", 15000, "", { "life_coplevel", 4 }},
+			{ "C_Hatchback_01_F", 3000, ""}
 		};
 	};
 
@@ -428,7 +426,7 @@ class CfgVehicles {
 			{ "Green", "civ", {
 	                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             } },
-            { "Police", "cop", {
+            { "Police (Sport)", "cop", {
                 "textures\police\vehicles\scotpol_hb.paa"
             } }
         };
@@ -537,6 +535,9 @@ class CfgVehicles {
             } },
             { "Black", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa"
+            } },
+			{ "Police", "cop", {
+              	"textures\police\vehicles\met_police_hatchback.paa"
             } }
         };
     };
@@ -562,6 +563,9 @@ class CfgVehicles {
             } },
             { "Police", "cop", {
                 "textures\police\vehicles\met_police_suv_white.paa"
+            } },
+						{ "Paramedic", "med", {
+                "textures\medic\vehicles\paramedic_suv.paa"
             } }
 	        };
     };
@@ -598,6 +602,10 @@ class CfgVehicles {
 						{ "Police", "cop", {
                 "textures\police\vehicles\scotpol_Boxer_Cab.paa",
 								"textures\police\vehicles\scotpol_Boxer_Back.paa",
+            } },
+						{ "Ambulance", "med", {
+                "textures\medic\vehicles\Ambulance_Boxer_Front.paa",
+								"textures\medic\vehicles\Ambulance_Boxer_Back.paa",
             } }
         };
     };
@@ -666,13 +674,21 @@ class CfgVehicles {
             } },
 			{ "Rebel Digital", "reb", {
 	                "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
-            } },
-            { "EMS White", "med", {
-                "#(argb,8,8,3)color(1,1,1,0.8)"
             } }
         };
     };
-
+  class B_Heli_Transport_01_F {
+		vItemSpace = 210;
+		storageFee[] = { 55000, 0, 22000, 0 };
+		garageSell[] = { 72500, 0, 35000, 0 };
+		insurance = 2500;
+		chopShop = 5000;
+		textures[] = {
+			{ "Police", "cop", {
+						"textures\police\vehicles\police_india99.paa"
+			} }
+		};
+	};
 	class O_Heli_Light_02_unarmed_F {
         vItemSpace = 210;
         storageFee[] = { 55000, 0, 22000, 0 };
@@ -692,12 +708,9 @@ class CfgVehicles {
 			{ "Desert Digi", "reb", {
 	                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             } },
-            { "EMS White", "med", {
-                "#(argb,8,8,3)color(1,1,1,0.8)"
-            } },
-			{ "Police", "cop", {
-				          "textures\police\vehicles\police_india99.paa"
-			      } }
+            { "Air Ambulance", "med", {
+                "textures\medic\vehicles\paramedic_hems.paa"
+            } }
         };
     };
 
