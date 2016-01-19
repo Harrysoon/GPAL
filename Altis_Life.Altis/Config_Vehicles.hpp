@@ -186,7 +186,10 @@ class CfgVehicles {
 		garageSell[] = { 0, 85000, 0, 0 };
 		insurance = 16000;
 		chopShop = 45000;
-		textures[] = {};
+		textures[] = {
+			{ "Police", "cop", {
+						"textures\police\vehicles\police_india99.paa"
+			} }
 	};
 
 	class B_MRAP_01_hmg_F : Default {
@@ -677,18 +680,7 @@ class CfgVehicles {
             } }
         };
     };
-  class B_Heli_Transport_01_F {
-		vItemSpace = 210;
-		storageFee[] = { 55000, 0, 22000, 0 };
-		garageSell[] = { 72500, 0, 35000, 0 };
-		insurance = 2500;
-		chopShop = 5000;
-		textures[] = {
-			{ "Police", "cop", {
-						"textures\police\vehicles\police_india99.paa"
-			} }
-		};
-	};
+		
 	class O_Heli_Light_02_unarmed_F {
         vItemSpace = 210;
         storageFee[] = { 55000, 0, 22000, 0 };
