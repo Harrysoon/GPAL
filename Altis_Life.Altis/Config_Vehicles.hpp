@@ -74,7 +74,10 @@ class CarShops {
 		vehicles[] = {
 			{ "C_Offroad_01_F", 5000, ""},
 			{ "C_SUV_01_F", 20000, "" },
-			{ "B_MRAP_01_F", 30000, "", { "life_coplevel", 3 } }
+			{ "B_MRAP_01_F", 30000, "", { "life_coplevel", 3 } },
+			{ "I_Truck_02_covered_F", 40000, ""},
+			{ "C_Van_01_box_F", 25000, ""},
+			{ "C_Hatchback_01_sport_F", 15000, ""}
 		};
 	};
 
@@ -90,7 +93,7 @@ class CarShops {
 		side = "cop";
 		vehicles[] = {
 			{ "B_Heli_Light_01_F", 75000, "cAir" },
-			{ "B_Heli_Transport_01_F", 200000, "cAir", { "life_coplevel", 3 } }
+			{ "O_Heli_Light_02_unarmed_F", 100000, "cAir", { "life_coplevel", 3 } }
 		};
 	};
 
@@ -379,7 +382,7 @@ class CfgVehicles {
 	                "#(ai,64,64,1)Fresnel(0.3,3)"
             } },
 			{ "Police", "cop", {
-	                "textures\police\vehicles\offroad.paa"
+	                "textures\police\vehicles\met_police_offroader.paa"
             } },
             /*{ "Taxi", "civ", {
 	                "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
@@ -426,7 +429,7 @@ class CfgVehicles {
 	                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             } },
             { "Police", "cop", {
-                "textures\police\vehicles\hatchback.paa"
+                "textures\police\vehicles\scotpol_hb.paa"
             } }
         };
     };
@@ -481,6 +484,10 @@ class CfgVehicles {
             } },
             { "Black", "fed", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            } },
+						{ "Police", "cop", {
+                "textures\police\vehicles\met_police_zamac_cab.paa",
+								"textures\police\vehicles\met_police_zamac_back.paa",
             } }
         };
     };
@@ -553,8 +560,8 @@ class CfgVehicles {
 			{ "Orange", "civ", {
 	                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             } },
-            { "Cop", "cop", {
-                "textures\police\vehicles\suv.paa"
+            { "Police", "cop", {
+                "textures\police\vehicles\met_police_suv_white.paa"
             } }
 	        };
     };
@@ -587,6 +594,10 @@ class CfgVehicles {
             } },
             { "Red", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa"
+            } },
+						{ "Police", "cop", {
+                "textures\police\vehicles\scotpol_Boxer_Cab.paa",
+								"textures\police\vehicles\scotpol_Boxer_Back.paa",
             } }
         };
     };
@@ -597,9 +608,9 @@ class CfgVehicles {
         insurance = 2500;
         chopShop = 5000;
         textures[] = {
-        	{ "Regular", "cop", {
-                "textures\police\vehicles\hunterfront.paa",
-								"textures\police\vehicles\hunterback.paa"
+        	{ "Police", "cop", {
+                "textures\police\vehicles\met_police_hunter_front.paa",
+								"textures\police\vehicles\met_police_hunter_back.paa"
             } },
             { "Black", "cop", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
@@ -683,7 +694,10 @@ class CfgVehicles {
             } },
             { "EMS White", "med", {
                 "#(argb,8,8,3)color(1,1,1,0.8)"
-            } }
+            } },
+			{ "Police", "cop", {
+				          "textures\police\vehicles\police_india99.paa"
+			      } }
         };
     };
 
