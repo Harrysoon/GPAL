@@ -1,7 +1,7 @@
 #include <macro.h>
 /*
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	All survival? things merged into one thread.
 */
@@ -23,7 +23,7 @@ _fnc_food =  {
 		};
 	};
 };
-	
+
 _fnc_water = {
 	if(life_thirst < 2) then {player setDamage 1; hint localize "STR_NOTF_DrinkMSG_Death";}
 	else
@@ -58,10 +58,11 @@ while {true} do {
 	/* Thirst / Hunger adjustment that is time based */
 	if((time - _waterTime) > 600) then {[] call _fnc_water; _waterTime = time;};
 	if((time - _foodTime) > 850) then {[] call _fnc_food; _foodTime = time;};
-	
+
 	/* Adjustment of carrying capacity based on backpack changes */
 	if(EQUAL(backpack player,"")) then {
 		life_maxWeight = life_maxWeightT;
+		 if(playerSide == west) then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 		_bp = backpack player;
 	} else {
 		if(!(EQUAL(backpack player,"")) && {!(EQUAL(backpack player,_bp))}) then {
@@ -69,13 +70,13 @@ while {true} do {
 			life_maxWeight = life_maxWeightT + (round(FETCH_CONFIG2(getNumber,CONFIG_VEHICLES,_bp,"maximumload") / 4));
 		};
 	};
-	
+
 	/* Check if the player's state changed? */
 	if(vehicle player != _lastState OR {!alive player}) then {
 		[] call life_fnc_updateViewDistance;
 		_lastState = vehicle player;
 	};
-	
+
 	/* Check if the weight has changed and the player is carrying to much */
 	if(life_carryWeight > life_maxWeight && {!isForcedWalk player}) then {
 		player forceWalk true;
@@ -86,7 +87,7 @@ while {true} do {
 			player forceWalk false;
 		};
 	};
-	
+
 	/* Travelling distance to decrease thirst/hunger which is captured every second so the distance is actually greater then 650 */
 	if(!alive player) then {_walkDis = 0;} else {
 		_curPos = visiblePosition player;
@@ -105,6 +106,3 @@ while {true} do {
 	};
 	uiSleep 1;
 };
-	
-	
-	
