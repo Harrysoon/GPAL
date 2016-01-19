@@ -37,7 +37,7 @@ class CarShops {
 	class med_air_hs {
 		side = "med";
 		vehicles[] = {
-			{ "O_Heli_Light_02_unarmed_F", 35000, "mAir" }
+			{ "O_Heli_Light_02_unarmed_F", 35000, "" }
 		};
 	};
 
@@ -190,6 +190,7 @@ class CfgVehicles {
 			{ "Police", "cop", {
 						"textures\police\vehicles\police_india99.paa"
 			} }
+		};
 	};
 
 	class B_MRAP_01_hmg_F : Default {
@@ -680,7 +681,7 @@ class CfgVehicles {
             } }
         };
     };
-		
+
 	class O_Heli_Light_02_unarmed_F {
         vItemSpace = 210;
         storageFee[] = { 55000, 0, 22000, 0 };
