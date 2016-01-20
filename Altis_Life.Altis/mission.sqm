@@ -3425,7 +3425,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="hc_1";
-					description="EMS Medic";
+					description="Headless Client";
 				};
 			};
 		};
