@@ -91,7 +91,7 @@ class CarShops {
 		side = "cop";
 		vehicles[] = {
 			{ "B_Heli_Light_01_F", 50000, "cAir" },
-			{ "B_Heli_Transport_01_F", 50000, "cAir", { "life_coplevel", 3 } }
+			{ "I_Heli_light_03_unarmed_F", 50000, "cAir", { "life_coplevel", 3 } }
 		};
 	};
 
@@ -180,7 +180,7 @@ class CfgVehicles {
         textures[] = { };
     };
 
-	class B_Heli_Transport_01_F {
+	class I_Heli_light_03_unarmed_F {
 		vItemSpace = 200;
 		storageFee[] = { 0, 50000, 0, 0 };
 		garageSell[] = { 0, 85000, 0, 0 };
