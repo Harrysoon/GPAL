@@ -8,7 +8,7 @@
 
 if(side player == independent) then {
 	if ((uniform player) == "U_B_CombatUniform_mcam") then {
-		player setObjectTextureGlobal [0, "textures\medic\medic_uniform_hv.paa"];
+		player setObjectTextureGlobal [0, "textures\medic\paramedic_uniform_hv.paa"];
 	};
 
 	if (backpack player == "B_Carryall_cbr") then {
