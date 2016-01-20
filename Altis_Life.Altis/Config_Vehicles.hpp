@@ -386,6 +386,9 @@ class CfgVehicles {
 			{ "Police", "cop", {
 	                "textures\police\vehicles\met_police_offroader.paa"
             } },
+			{ "Police", "cop", {
+		            "textures\hato\vehicles\heto_offroader.paa"
+		    } }, 		
             /*{ "Taxi", "civ", {
 	                "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             } }*/
