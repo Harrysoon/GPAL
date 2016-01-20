@@ -83,7 +83,7 @@ class CarShops {
 		side = "civ";
 		vehicles[] = {
 			{ "B_Heli_Light_01_F", 253000, "pilot" },
-			{ "O_Heli_Light_02_unarmed_F", 750000, "pilot" }
+			{ "B_Heli_Transport_01_F", 750000, "pilot" }
 		};
 	};
 
