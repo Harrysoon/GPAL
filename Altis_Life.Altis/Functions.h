@@ -25,8 +25,11 @@ class Life_Client_Core
 		class initCiv {};
 		class initCop {};
 		class initMedic {};
+		class inithato{};
 		class welcomeNotification {};
 		class survival {};
+		
+	    class 
 	};
 
 	class Admin
@@ -87,7 +90,6 @@ class Life_Client_Core
 		class ticketAction {};
 		class packupSpikes {};
 		class storeVehicle {};
-		class robAction {};
 		class captureHideout {};
 		class gather {};
 		class gutAnimal {};
@@ -235,6 +237,7 @@ class Life_Client_Core
 		class vehicleWeight {};
 		class deviceMine {};
 		class addVehicle2Chain {};
+		class hatoVinteractionMenu {};
 	};
 
 	class Cop
@@ -265,7 +268,13 @@ class Life_Client_Core
 		class ticketPaid {};
 		class wantedGrab {};
 	};
-
+	class hato
+	{
+		file = "core\hato";
+		class hatoLoadout {};
+	};
+	
+	}
 	class Gangs
 	{
 		file = "core\gangs";
