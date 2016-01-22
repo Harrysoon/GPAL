@@ -15,6 +15,11 @@ if(side player == independent) then {
 		backpackContainer player setObjectTextureGlobal [0, "textures\medic\mediccarryall.paa"];
 	};
 };
+if(side player == EAST) then {
+	if ((uniform player) == "U_B_CombatUniform_mcam") then {
+		player setObjectTextureGlobal [0, "textures\hato\heto_uniform_tm1.paa"];
+	};
+};
 if(side player == WEST) then {
 	switch(FETCH_CONST(life_coplevel)) do{
 		case 0:{

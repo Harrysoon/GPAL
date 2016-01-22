@@ -2,7 +2,7 @@
 /*
 	File: fn_p_openMenu.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Opens the players virtual inventory menu
 */
@@ -14,9 +14,14 @@ switch(playerSide) do {
 	case west: {
 		ctrlShow[2011,false];
 	};
-	
+
 	case civilian: {
 		ctrlShow[2012,false];
+	};
+
+	case east:
+	{
+		ctrlShow[2011,false];
 	};
 };
 

@@ -2,7 +2,7 @@
 /*
 	File: fn_respawned.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Sets the player up if he/she used the respawn option.
 */
@@ -34,6 +34,9 @@ switch(playerSide) do
 	};
 	case independent: {
 		_handle = [] spawn life_fnc_medicLoadout;
+	};
+	case east:{
+		_handle = [] spawn life_fnc_hatoLoadout;
 	};
 	waitUntil {scriptDone _handle};
 };
