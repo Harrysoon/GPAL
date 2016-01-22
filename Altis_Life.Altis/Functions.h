@@ -28,8 +28,6 @@ class Life_Client_Core
 		class initHato{};
 		class welcomeNotification {};
 		class survival {};
-		
-	    class 
 	};
 
 	class Admin

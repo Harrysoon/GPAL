@@ -53,10 +53,10 @@ switch (_side) do
 		];
 	};
 
-	case east: 
+	case east:
 	{
 		_return = [
-			["hato_spawn1","HATO Yard","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+			["hato_spawn_1","HATO Yard","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 		];
 	};
 };

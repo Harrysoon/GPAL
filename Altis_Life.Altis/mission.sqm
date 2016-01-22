@@ -3501,7 +3501,7 @@ class Mission
 					azimut=345;
 					id=213;
 					side="EAST";
-					vehicle="O_Soldier_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -10658,6 +10658,13 @@ class Mission
 			text="Hunting Grounds";
 			type="mil_join";
 			colorName="ColorRed";
+		};
+		class Item217
+		{
+			position[]={3292.1787,2.2604189,12961.598};
+			name="hato_spawn_1";
+			type="Empty";
+			angle=180.00848;
 		};
 	};
 };

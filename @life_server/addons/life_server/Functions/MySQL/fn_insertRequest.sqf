@@ -59,7 +59,7 @@ _query = format["playerInfoInsert:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13",
     [],  // Med Gear
     []  // Hato Gear
 ];
-
+diag_log format["%1",_queryResult];
 waitUntil {!DB_Async_Active};
 [_query,1] call DB_fnc_asyncCall;
 [[],"SOCK_fnc_dataQuery",(owner _returnToSender),false] call life_fnc_MP;
