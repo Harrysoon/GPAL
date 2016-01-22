@@ -6,10 +6,10 @@
 	Description:
 	Retrains the client.
 */
-private["_adac","_player"];
-_adac = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
+private["_hato","_player"];
+_hato = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 _player = player;
-if(isNull _adac) exitWith {};
+if(isNull _hato) exitWith {};
 
 //Monitor excessive restrainment
 [] spawn {
@@ -31,7 +31,7 @@ if(isNull _adac) exitWith {};
 
 if((player GVAR["surrender",FALSE])) then { player SVAR["surrender",FALSE,TRUE]; player switchMove ""; };
 
-titleText[format[localize "STR_Cop_Retrained",_adac GVAR ["realname",name _adac]],"PLAIN"];
+titleText[format[localize "STR_Cop_Retrained",_hato GVAR ["realname",name _hato]],"PLAIN"];
 
 while {player GVAR  "restrained"} do {
 	if(vehicle player == player) then {
@@ -48,7 +48,7 @@ while {player GVAR  "restrained"} do {
 		detach _player;
 	};
 
-	if(!alive _adac) exitWith {
+	if(!alive _hato) exitWith {
 		player SVAR ["Escorting",false,true];
 		detach player;
 	};

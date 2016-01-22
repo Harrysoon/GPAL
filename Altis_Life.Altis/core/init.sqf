@@ -71,7 +71,7 @@ switch (playerSide) do {
 	case east:
 	{
 		//Initialize HATO
-		_handle = [] spawn life_fnc_initAdac;
+		_handle = [] spawn life_fnc_initHato;
 		waitUntil {scriptDone _handle};
 	};
 };

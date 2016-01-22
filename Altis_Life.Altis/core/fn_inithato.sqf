@@ -1,6 +1,6 @@
 #include <macro.h>
 /*
-	File: fn_initAdac.sqf
+	File: fn_initHato.sqf
 	Author: Bryan "Tonic" Boardwine
 
 	Description:
@@ -11,7 +11,7 @@ private [ "_end" ];
 addRating player 99999999 ;
 waitUntil {! ( isNull ( findDisplay 46 ))};
 
-if((FETCH_CONST(life_adacLevel)) < 1) exitWith {
+if((FETCH_CONST(life_hatoLevel)) < 1) exitWith {
 	["Notwhitelisted",FALSE,TRUE] call BIS_fnc_endMission;
 	sleep 35;
 };
