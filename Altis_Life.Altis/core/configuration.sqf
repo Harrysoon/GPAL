@@ -76,12 +76,6 @@ switch (playerSide) do {
 		BANK = 500000;
 		life_paycheck = 5000;
 	};
-
-	case east:
-	{
-		BANK = 500000; //Starting Bank Money
-		life_paycheck = 5000; //Paycheck Amount
-	};
 };
 
 /*

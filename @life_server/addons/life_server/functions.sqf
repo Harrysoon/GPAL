@@ -204,7 +204,7 @@ private[""_msg"",""_to""];
 	_to = ""HATO Units"";
 	if(_msg == """") exitWith {hint ""You must enter a Message!"";ctrlShow[3023,true];};
 
-	[[_msg,name player,6],""TON_fnc_clientMessage"",east,false] spawn life_fnc_MP;
+	[[_msg,name player,6],""TON_fnc_clientMessage"",true,false] spawn life_fnc_MP;
 	[] call life_fnc_cellphone;
 	hint format[""You have sent a message to all HATO Units."",_to,_msg];
 	ctrlShow[3023,true];

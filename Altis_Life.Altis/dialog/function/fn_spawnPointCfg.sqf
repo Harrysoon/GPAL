@@ -52,13 +52,6 @@ switch (_side) do
 			["medic_spawn_3","Pygros Hospital","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
 		];
 	};
-
-	case east:
-	{
-		_return = [
-			["hato_spawn_1","HATO Yard","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
-		];
-	};
 };
 
 _return;

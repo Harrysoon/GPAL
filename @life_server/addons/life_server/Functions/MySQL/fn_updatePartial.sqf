@@ -38,7 +38,6 @@ switch(_mode) do {
 			case west: {_query = format["playerUpdateCopLicense:%1:%2",_value,_uid];};
 			case civilian: {_query = format["playerUpdateCivLicense:%1:%2",_value,_uid];};
 			case independent: {_query = format["playerUpdateMedLicense:%1:%2",_value,_uid];};
-			case east: {_query = format["playerUpdateHatoLicense:%1:%2",_value,_uid];};
 		};
 	};
 
@@ -48,7 +47,6 @@ switch(_mode) do {
 			case west: {_query = format["playerUpdateCopGear:%1:%2",_value,_uid];};
 			case civilian: {_query = format["playerUpdateCivGear:%1:%2",_value,_uid];};
 			case independent: {_query = format["playerUpdateMedGear:%1:%2",_value,_uid];};
-			case east: {_query = format["playerUpdateHatoGear:%1:%2",_value,_uid];};
 		};
 	};
 

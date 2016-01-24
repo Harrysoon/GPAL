@@ -75,12 +75,6 @@ switch(playerSide) do {
 		CONST(life_medicLevel, parseNumber(SEL(_this,7)));
 		CONST(life_coplevel,0);
 	};
-
-	case east: {
-		CONST(life_hatolevel, parseNumber(SEL(_this,7)));
-		CONST(life_coplevel,0);
-		CONST(life_medicLevel,0);
-	};
 };
 
 if(count (SEL(_this,12)) > 0) then {

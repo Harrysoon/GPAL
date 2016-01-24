@@ -44,7 +44,7 @@ _money = [_money] call DB_fnc_numberSafe;
 _bank = [_bank] call DB_fnc_numberSafe;
 
 //Prepare the query statement..
-_query = format["playerInfoInsert:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13",
+_query = format["playerInfoInsert:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11",
 	_uid,
 	_name,
 	_money,
@@ -52,12 +52,10 @@ _query = format["playerInfoInsert:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13",
 	_alias,
 	[],	// Cop Licenses
     [], // Med Licenses
-    [],  // Hato Licenses
     [], // Civ Licenses
     [], // Civ Gear
     [], // Cop Gear
     [],  // Med Gear
-    []  // Hato Gear
 ];
 diag_log format["%1",_queryResult];
 waitUntil {!DB_Async_Active};
