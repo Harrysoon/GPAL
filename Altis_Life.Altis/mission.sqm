@@ -3491,23 +3491,62 @@ class Mission
 		};
 		class Item83
 		{
-			side="EAST";
+			side="GUER";
 			class Vehicles
 			{
-				items=1;
+				items=4;
 				class Item0
 				{
-					position[]={3756.9714,10.986222,13349.663};
-					azimut=345;
-					id=213;
-					side="EAST";
+					position[]={8424.9258,99.930687,25177.225};
+					azimut=185.11099;
+					special="NONE";
+					id=739;
+					side="GUER";
 					vehicle="B_medic_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="hato_1";
-					init="removeBackpack this; removeAllWeapons this;";
-					description="WhiteListed - Hato 1";
+					description="HATO";
+				};
+				class Item1
+				{
+					position[]={8425.2324,99.418427,25179.02};
+					azimut=185.11099;
+					special="NONE";
+					id=740;
+					side="GUER";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="hato_3";
+					description="HATO";
+				};
+				class Item2
+				{
+					position[]={8427.6777,99.306786,25178.748};
+					azimut=185.11099;
+					special="NONE";
+					id=741;
+					side="GUER";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="hato_4";
+					description="HATO";
+				};
+				class Item3
+				{
+					position[]={8428.2236,99.711594,25177.109};
+					azimut=185.11099;
+					special="NONE";
+					id=742;
+					side="GUER";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="hato_2";
+					description="HATO";
 				};
 			};
 		};

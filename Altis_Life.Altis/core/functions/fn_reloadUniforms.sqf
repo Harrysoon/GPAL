@@ -7,8 +7,17 @@
 
 
 if(side player == independent) then {
-	if ((uniform player) == "U_B_CombatUniform_mcam") then {
-		player setObjectTextureGlobal [0, "textures\medic\paramedic_uniform_hv.paa"];
+	switch(FETCH_CONST(life_mediclevel)) do{
+		case 1:{
+			if ((uniform player) == "U_B_CombatUniform_mcam") then {
+				player setObjectTextureGlobal [0, "textures\medic\paramedic_uniform_hv.paa"];
+			};
+		};
+		case 2:{
+			if (uniform player == "U_B_CombatUniform_mcam") then{
+				player setObjectTextureGlobal [0, "textures\hato\hato_Uniform.paa"];
+			};
+		};
 	};
 
 	if (backpack player == "B_Carryall_cbr") then {
@@ -28,9 +37,7 @@ if(side player == WEST) then {
 			};
 		};
 		case 1:{
-			if (uniform player == "U_B_CombatUniform_mcam") then{
-				player setObjectTextureGlobal [0, "textures\hato\hato_Uniform.paa"];
-			};
+
 		};
 		case 2:{
 			if (uniform player == "U_B_CombatUniform_mcam") then{
