@@ -183,4 +183,10 @@ class CfgNotifications
 		duration = 10;
 		priority = 5;
 	};
+
+	class CarAlarm {
+		name="CarAlarm";
+		sound[] = {"\sounds\caralarm.ogg", 1, 1};
+		titles[] = {};
+	};
 };
