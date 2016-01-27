@@ -251,11 +251,17 @@ switch (_code) do {
 			};
 		};
 	};
-	//Shift+P = Faded Sound
+	//END = Faded Sound
 	case 207:{
-	     	[] call life_fnc_fadeSound;
-	     	_handled = true;
-		};
+			if (soundVolume != 1) then {
+				1 fadeSound 1;
+				titleText ["Your sound has returned to normal.", "PLAIN"];
+			}
+			else {
+				1 fadeSound 0.4;
+				titleText ["Your sound has been lowered.", "PLAIN"];
+			};
+	};
 };
 
 

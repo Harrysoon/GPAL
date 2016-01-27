@@ -190,7 +190,6 @@ class Life_Client_Core
 		class nearATM {};
 		class reloadUniforms {};
 		class CarAlarm {};
-		class fadeSound {};
 	};
 
 
