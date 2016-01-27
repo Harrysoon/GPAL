@@ -252,11 +252,9 @@ switch (_code) do {
 		};
 	};
 	//Shift+P = Faded Sound
-	case 25:{
-	    if(_shift) then    {
+	case 207:{
 	     	[] call life_fnc_fadeSound;
 	     	_handled = true;
-			};
 		};
 };
 
