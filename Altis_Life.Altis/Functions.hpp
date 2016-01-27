@@ -189,11 +189,8 @@ class Life_Client_Core
 		class stripDownPlayer {};
 		class nearATM {};
 		class reloadUniforms {};
-<<<<<<< HEAD
 		class CarAlarm {};
-=======
 		class fadeSound {};
->>>>>>> origin/master
 	};
 
 
