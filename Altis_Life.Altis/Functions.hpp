@@ -189,6 +189,7 @@ class Life_Client_Core
 		class stripDownPlayer {};
 		class nearATM {};
 		class reloadUniforms {};
+		class CarAlarm {};
 	};
 
 	class Network
@@ -264,7 +265,7 @@ class Life_Client_Core
 		class ticketPaid {};
 		class wantedGrab {};
 	};
-	
+
 	}
 	class Gangs
 	{
