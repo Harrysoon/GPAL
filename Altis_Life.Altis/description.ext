@@ -65,19 +65,25 @@ class CfgSounds
 		name = "flashbang";
 		sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
 		titles[] = {};
-	};	
-		
+	};
+
 	class car_lock
 	{
 		name = "car_lock";
 		sound[] = {"\sounds\car_lock.ogg", 1.0, 1};
 		titles[] = {};
 	};
-	
+
 	class unlock
 	{
 		name = "unlock";
 		sound[] = {"\sounds\unlock.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class CarAlarm {
+		name="CarAlarm";
+		sound[] = {"\sounds\caralarm.ogg", 1, 1};
 		titles[] = {};
 	};
 };
@@ -197,11 +203,5 @@ class CfgNotifications
 		description = "%1";
 		duration = 10;
 		priority = 5;
-	};
-
-	class CarAlarm {
-		name="CarAlarm";
-		sound[] = {"\sounds\caralarm.ogg", 1, 1};
-		titles[] = {};
 	};
 };
