@@ -255,11 +255,11 @@ switch (_code) do {
 	case 207:{
 			if (soundVolume != 1) then {
 				1 fadeSound 1;
-				titleText ["Your sound has returned to normal.", "PLAIN"];
+				titleText ["You have taken our your earplugs.", "PLAIN"];
 			}
 			else {
-				1 fadeSound 0.4;
-				titleText ["Your sound has been lowered.", "PLAIN"];
+				1 fadeSound 0.3;
+				titleText ["You have inserted your earplugs.", "PLAIN"];
 			};
 	};
 };
